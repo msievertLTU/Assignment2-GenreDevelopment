@@ -23,6 +23,7 @@ public class ZombieBulletScript : MonoBehaviour
         {
             Destroy(this.gameObject);
             collision.gameObject.GetComponent<PlayerHealth>().playerHP -= 1;
+            collision.gameObject.GetComponent<PlayerHealth>().updateHPUI();
         }
     }
 

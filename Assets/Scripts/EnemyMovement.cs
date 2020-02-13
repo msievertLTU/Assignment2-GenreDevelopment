@@ -19,7 +19,7 @@ public class EnemyMovement : MonoBehaviour
 
     void KillPassedZombies()
     {
-        if (zombie.transform.position.y + 2 < player.position.y)
+        if (zombie.transform.position.y + 5 < player.position.y)
         {
             Destroy(zombie);
         }
@@ -41,7 +41,7 @@ public class EnemyMovement : MonoBehaviour
 
         if (distanceToPlayer <= zombieRange && distanceToPlayer >= 0.25)
         {
-            Movement(zombieSpeed, zombieSpeed * 2);
+            Movement(zombieSpeed, zombieSpeed * 4);
         }
         else if (distanceToPlayer >= 0.25)
         {

@@ -19,7 +19,7 @@ public class BulletScript : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log(collision.gameObject.tag.ToString());
+        //Debug.Log(collision.gameObject.tag.ToString());
         if (collision.gameObject.tag == "Enemy")
         {
             Destroy(this.gameObject);
